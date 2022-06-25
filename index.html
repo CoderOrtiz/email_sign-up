@@ -14,35 +14,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
-  <body class="container">
-  <form>
+  <!-- "action" & "method" required to get information back from "app.post" in the app.js File -->
+  <form action="/" method="post">
     <!-- Sign in Message -->
     <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" alt="Welcome_image" width="300px" >
     <h3>Please sign in</h3>
 
+    <!-- First Name Request -->
+    <div class="hello">
+    <div class="form-floating">
+      <input type="text" name="fname" class="form-control top" id="top" placeholder="First Name:" required autofocus>
+    </div>
+
+    <!-- Last Name Request -->
+    <div class="form-floating">
+      <input type="text" name="lname" class="form-control middle" placeholder="Last Name:" required>
+    </div>
+
     <!-- E-Mail Address Request -->
     <div class="form-floating">
-      <input type="email" class="form-control"  placeholder="Email address:">
-      <label for="floatingInput"></label>
+      <input type="email" name="email"class="form-control bottom" placeholder="Email address:" required>
     </div>
+  </div>
 
-    <!-- Password Input Request -->
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password:">
-      <label for="floatingPassword"></label>
-    </div>
-
-    <!-- Check Box -->
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me</label>
-    </div>
-    
     <!-- Sign-Up Button -->
-    <button class="btn-lg btn-primary" type="submit">Sign Up</button>
+    <button class="btn-lg btn-primary" type="submit">Sign Me Up Captain!</button>
     <p class="copy_right">&copy; Daniel Ortiz 2022</p>
   </form>
 </main>
